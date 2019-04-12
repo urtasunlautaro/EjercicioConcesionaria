@@ -14,6 +14,6 @@ public class Automovil extends Vehiculo {
 
     @Override
     public String toString() {
-        return super.toString() + " // Puertas: " + cantidadPuertas;
+        return super.toString() + " // Puertas: " + getCantidadPuertas();
     }
 }

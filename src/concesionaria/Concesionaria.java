@@ -20,7 +20,7 @@ public class Concesionaria {
         vehiculos.add(new Motocicleta("Yamaha", "YBR", 80500.50, 160));
     }
 
-    public void imprimir(){
+    public void impresionCompleta(){
         impresionBasica();
         imprimirSeparador();
         impresionDeMayorAMenor();
@@ -69,7 +69,7 @@ public class Concesionaria {
         }
     }
 
-    public void impresionDeMayorAMenor() {
+    private void impresionDeMayorAMenor() {
         vehiculos.sort(Collections.reverseOrder());
         System.out.println("Vehículos ordenados por precio de mayor a menor:");
         vehiculos.forEach(vehiculo-> System.out.println(vehiculo.shortString()));
